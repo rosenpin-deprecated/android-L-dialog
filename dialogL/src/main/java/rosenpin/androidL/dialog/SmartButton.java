@@ -12,6 +12,7 @@ import android.graphics.Path;
 import android.graphics.RadialGradient;
 import android.graphics.Region;
 import android.graphics.Shader;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.animation.AccelerateInterpolator;
@@ -48,24 +49,26 @@ public class SmartButton extends Button {
 
     @Override
     public boolean onTouchEvent(@NonNull final MotionEvent event) {
-        final ObjectAnimator animator = ObjectAnimator.ofFloat(this, "radius", 0, getWidth() * 3.0f);
-        if (event.getActionMasked() == MotionEvent.ACTION_UP) {
-            mDownX = event.getX();
-            mDownY = event.getY();
+        if(Build.VERSION.SDK_INT >= 11) {
+            final ObjectAnimator animator = ObjectAnimator.ofFloat(this, "radius", 0, getWidth() * 3.0f);
+            if (event.getActionMasked() == MotionEvent.ACTION_UP) {
+                mDownX = event.getX();
+                mDownY = event.getY();
 
-            animator.setInterpolator(new AccelerateInterpolator());
-            animator.setDuration(1000);
-            animator.start();
-        }
-        if (event.getActionMasked() == MotionEvent.ACTION_DOWN) {
-            mDownX = event.getX();
-            mDownY = event.getY();
+                animator.setInterpolator(new AccelerateInterpolator());
+                animator.setDuration(1000);
+                animator.start();
+            }
+            if (event.getActionMasked() == MotionEvent.ACTION_DOWN) {
+                mDownX = event.getX();
+                mDownY = event.getY();
 
-            animator.setInterpolator(new AccelerateInterpolator());
-            animator.setDuration(1000);
-            animator.start();
+                animator.setInterpolator(new AccelerateInterpolator());
+                animator.setDuration(1000);
+                animator.start();
 
             }
+        }
             return super.onTouchEvent(event);
     }
 

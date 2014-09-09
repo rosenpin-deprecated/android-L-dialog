@@ -36,4 +36,6 @@ dependencies {
     compile project(':dialogL')
 }
 ```
+4. Gradle sync and rebuild project
 
+5. Add AndroidLDialog to your code!, see "Instructions"

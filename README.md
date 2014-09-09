@@ -1,4 +1,4 @@
-AndroidLDialog
+Android L Dialog
 ==============
 
 A library to be used for creating android-l like dialogs on android 2.3+

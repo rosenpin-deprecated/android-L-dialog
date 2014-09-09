@@ -107,6 +107,23 @@ dialog.setMessageTextSize(22);
 ```
 
 
+Adding stuff from 'Dialog' default constractor
+-------------------------------------
+After defining the AndroidLDialog.Builder
+
+```
+    AndroidLDialog androidLDialog = new AndroidLDialog.Builder(Test.this)
+        .setTitle("Title");
+        .setMessage("Message")
+        .show();
+```
+
+Add the stuff you want like
+```
+    androidLDialog.setCancelable(false);
+```
+etc.
+
 Please notice:
 If you are using android 3.0- you won't get the onclick animation.
 

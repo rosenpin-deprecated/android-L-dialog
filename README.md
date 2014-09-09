@@ -3,7 +3,7 @@ Android L Dialog
 
 A library to be used for creating android-l like dialogs on android 2.3+
 
-![alt tag](http://i.picresize.com/images/2014/09/09/scwTa.png)
+![alt tag](http://i.picresize.com/images/2014/09/09/gSHu9.png)
 
 
 Hi, my name is Tomer Rosenfeld.

@@ -2,6 +2,10 @@ AndroidLDialog
 ==============
 
 A library to be used for creating android-l like dialogs on android 2.3+
+
+![alt tag](http://i.picresize.com/images/2014/09/09/scwTa.png)
+
+
 Hi, my name is Tomer Rosenfeld.
 I'm a 15 years old Israeli kid, I love android and especially android L so I figured, why not make android developer's life easier?
 So here you go.

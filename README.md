@@ -105,3 +105,12 @@ dialog.setTitleTextSize(22);
 //or
 dialog.setMessageTextSize(22);
 ```
+
+
+Please notice:
+If you are using android 3.0- you won't get the onclick animation.
+
+Q&A
+====
+
+Ask me on facebook here https://www.facebook.com/rosenpin4ever

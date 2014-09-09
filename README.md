@@ -111,7 +111,7 @@ Adding stuff from 'Dialog' default constractor
 -------------------------------------
 After defining the AndroidLDialog.Builder
 
-```
+```java
     AndroidLDialog androidLDialog = new AndroidLDialog.Builder(Test.this)
         .setTitle("Title");
         .setMessage("Message")
@@ -119,7 +119,7 @@ After defining the AndroidLDialog.Builder
 ```
 
 Add the stuff you want like
-```
+```java
     androidLDialog.setCancelable(false);
 ```
 etc.

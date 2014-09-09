@@ -29,13 +29,79 @@ How to use the library in your project
 
 2. Pull the dialogL folder from the example project to your project root directory
 
-3. Add the library project as a dependency in your build.gradle file like this
+3. Add the library project as a dependency in your build.gradle file like shown below
+
+4. Gradle sync and rebuild project
+
+5. Add AndroidLDialog to your code!, see "Instructions"
 
 ```
 dependencies {
     compile project(':dialogL')
 }
 ```
-4. Gradle sync and rebuild project
 
-5. Add AndroidLDialog to your code!, see "Instructions"
+Instructions
+=============
+
+
+BASICS
+------
+
+Creating the basic dialog:
+```java
+AndroidLDialog dialog = new AndroidLDialog.Builder(ActivityName.this)
+    .Title("A Title)
+    .Message("A message)
+    .setPositiveButton("TEXT" , new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                })
+    .setNegativeButton("CANCEL", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                })
+      //finally
+      .show();
+```
+
+More? OK!
+=========
+
+ADVANCED
+--------
+
+Changing the dialog background:
+```java
+dialog.setBackground(R.drawable.background);
+//or
+dialog.setBackground(Your Drawable);
+//or
+dialog.setBackgroundColor(R.color.your_color);
+```
+
+Getting text from the dialog
+-----------------------------
+
+```java
+String title = dialog.getTitle();
+//or
+String message = dialog.getMessage();
+```
+
+More customization
+------------------
+
+```
+dialog.setTitleColor(getResources().getColor(R.color.your_color);
+//or
+dialog.setMessageColor(getResources().getColor(R.color.your_color);
+//or
+dialog.setTitleTextSize(22);
+//or
+dialog.setMessageTextSize(22);
+```

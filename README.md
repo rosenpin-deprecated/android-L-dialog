@@ -35,7 +35,7 @@ How to use the library in your project
 
 5. Add AndroidLDialog to your code!, see "Instructions"
 
-```
+```groovy
 dependencies {
     compile project(':dialogL')
 }
@@ -96,7 +96,7 @@ String message = dialog.getMessage();
 More customization
 ------------------
 
-```
+```java
 dialog.setTitleColor(getResources().getColor(R.color.your_color);
 //or
 dialog.setMessageColor(getResources().getColor(R.color.your_color);

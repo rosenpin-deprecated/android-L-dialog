@@ -107,7 +107,7 @@ dialog.setMessageTextSize(22);
 ```
 
 
-Adding stuff from 'Dialog' default constractor
+Adding stuff from 'Dialog' default constructor
 -------------------------------------
 After defining the AndroidLDialog.Builder
 

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidLDialog.iml" filepath="$PROJECT_DIR$/AndroidLDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-L-DIalog.iml" filepath="$PROJECT_DIR$/Android-L-DIalog.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialogL/dialogL.iml" filepath="$PROJECT_DIR$/dialogL/dialogL.iml" />
       <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
     </modules>
   </component>
 </project>
-

@@ -3,6 +3,11 @@ Android L Dialog
 
 A library to be used for creating android-l like dialogs on android 2.3+
 
+[![Get it on Google Play](
+    https://developer.android.com/images/brand/en_generic_rgb_wo_45.png)](
+    https://play.google.com/store/apps/details?id=example.dialog)
+
+
 ![alt tag](http://i.picresize.com/images/2014/09/09/gSHu9.png)
 
 

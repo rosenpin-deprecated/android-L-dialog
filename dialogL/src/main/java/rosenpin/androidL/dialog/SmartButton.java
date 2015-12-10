@@ -3,6 +3,7 @@ package rosenpin.androidL.dialog;
 /**
  * Created by tomer on 21/08/14.
  */
+
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -49,7 +50,7 @@ public class SmartButton extends Button {
 
     @Override
     public boolean onTouchEvent(@NonNull final MotionEvent event) {
-        if(Build.VERSION.SDK_INT >= 11) {
+        if (Build.VERSION.SDK_INT >= 11) {
             final ObjectAnimator animator = ObjectAnimator.ofFloat(this, "radius", 0, getWidth() * 3.0f);
             if (event.getActionMasked() == MotionEvent.ACTION_UP) {
                 mDownX = event.getX();
@@ -69,7 +70,7 @@ public class SmartButton extends Button {
 
             }
         }
-            return super.onTouchEvent(event);
+        return super.onTouchEvent(event);
     }
 
     public void setRadius(final float radius) {
